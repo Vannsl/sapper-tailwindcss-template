@@ -1,6 +1,6 @@
-# sapper-template
+# sapper-tailwindcss-template
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+The is a fork of the default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack. It extends the default template by installing TailwindCSS, PostCSS and PurgeCSS.
 
 
 ## Getting started
@@ -31,6 +31,12 @@ However you get the code, you can install dependencies and run the project in de
 cd my-app
 npm install # or yarn
 npm run dev
+```
+
+and in another window of the terminal:
+
+```bash
+npm run dev:tailwindcss
 ```
 
 Open up [localhost:3000](http://localhost:3000) and start clicking around.

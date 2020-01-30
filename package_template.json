@@ -4,8 +4,10 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build",
-    "export": "sapper export",
+    "dev:tailwindcss": "postcss static/tailwind.css -o static/index.css -w",
+    "build:tailwindcss": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
+    "build": "npm run build:tailwindcss && sapper build --legacy",
+    "export": "npm run build:tailwindcss && sapper export --legacy",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
