@@ -29,12 +29,6 @@ npm install # or yarn
 npm run dev
 ```
 
-and in another window of the terminal:
-
-```bash
-npm run dev:tailwindcss
-```
-
 Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
